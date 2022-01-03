@@ -1,0 +1,372 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.list__a li, a, button{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #eecd;
+  
+}
+header{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: #18183a;
+}
+.logo{
+    cursor: pointer;
+    border-radius: 50px;
+    margin-right: auto;
+}
+.nav__link ul{
+    list-style-type:none ;
+}
+.nav__link li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+.nav__link li a{
+    transition: all 0.3s ease 0s ;
+
+}
+.nav__link li a:hover{
+    color: white; 
+}
+.btn{
+    border:none;
+    padding: 10px 25px;
+    margin-left: 25px;
+    border-radius: 50px;
+    background-color:#b8007b ;
+    transition: all 0.3s ease 0s ;
+}
+.btn:hover{
+    color: white;
+    background-color:#00003b ;
+    cursor: pointer;
+}
+
+/****************
+ navmanu css end 
+ ****************/
+
+ .about{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #00003b;
+     
+     padding: 50px 0;
+ }
+ .about__a{
+     
+     width: 50%;
+     margin: 0 10%;
+ }
+ .s__color{
+     color:#b8007b ;
+ }
+ .about__a h1{
+     margin-top: 50px;
+     font-size: 50px;
+     color: rgb(167, 165, 165);
+ }
+ .about__a p{
+     color: rgb(153, 151, 151);
+     margin-top: 30px;
+     font-size: 20px;
+     font-weight: 500;
+ }
+ button[class="btnb"] {
+    border:none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color:#b8007b ;
+    transition: all 0.3s ease 0s ;
+     margin-top: 50px ;
+ }
+ button[class="btnb"]:hover{
+    color: white;
+    background-color:#00003b ;
+    cursor: pointer;
+ }
+
+ .about__b{
+   
+     width: 50%;
+ }
+
+ .about__pic{
+     margin-top: 50px;
+     width: 350px;
+     height: 400px; 
+     outline: none;
+     border-radius:58% 42% 23% 77% / 74% 76% 24% 26%  ;
+     position: relative;
+     animation-name: example;
+     animation-duration: 5s;
+     animation-timing-function: linear;
+     animation-delay: 2s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ }
+
+ @keyframes example {
+    0%   {background-color:#b8007b; left:0px; top:0px;}
+    25%  {background-color:#b8007b; left:30px; top:0px;}
+    50%  {background-color:#b8007b; left:30px; top:30px;}
+    75%  {background-color:#b8007b; left:0px; top:30px;}
+    100% {background-color:#b8007b; left:0px; top:0px;}
+  }
+  
+  /************
+    about end 
+   ************/
+
+   .portfolio{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 100px 5%;
+       background-color: rgba(190, 190, 175, 0.867);
+   }
+   
+    div [class*="icon"]{
+       width: 75px;
+       height:75px;
+       padding: 10px;
+       background-color: rgb(238, 255, 0);
+       border-radius: 50%;
+       margin-top: -36px;
+       
+   }
+   
+   .div1, .div2, .div3{
+       color: aliceblue;
+       background-color: rgb(28, 33, 105);
+       margin: 50px; 
+       border-radius: 10px;
+       text-align: center;
+       transition: all .3s ease 0s;
+   }
+    .div1:hover, .div2:hover, .div3:hover {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);;
+   }
+   .div1> h1,.div2> h1, .div3> h1{
+       padding: 5px;
+       color: rgb(35, 34, 95);
+       margin: 40px 0 10px 0;
+       background-color: white;
+   }
+   .div1> p,.div2> p, .div3> p{
+       text-align: justify;
+       font-size: 20px;
+       padding: 15px;
+   }
+
+
+   /**************
+    portfolio end  
+    **************/
+
+  .container{
+        background-color: #18183a;
+        color: white;
+        padding:  50px ;
+        margin: 70px 300px;
+        border-radius: 10px;
+        
+  }
+  .container h1{
+      text-align: center;
+  }
+  .container li{
+      list-style-type: none;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      position: relative;
+  }
+  .container li::before{
+      content: '';
+      position: absolute;
+      top: calc(100% + 5px);
+      background-color: rgb(100, 88, 17);
+      height: 15px;
+      width: 100%;
+      border-radius: 1000px;
+      left: 0;
+  }
+  .container li::after{
+      content: '';
+      position: absolute;
+      top: calc(100% + 5px);
+      background-color: rgb(255, 230, 0);
+      height: 15px;
+      width: 0;
+      border-radius: 1000px;
+      left: 0;
+
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+  }
+  .container li.html::after{
+      animation-name: html;
+  }
+  @keyframes html{
+      to{
+          width: 80%;
+      }
+  }
+  .container li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 75%;
+    }
+}
+.container li.js::after{
+    animation-name: hml;
+}
+@keyframes hml{
+    to{
+        width: 80%;
+    }
+}
+.container li.bt::after{
+    animation-name: bt;
+}
+@keyframes bt{
+    to{
+        width: 84%;
+    }
+}
+.container li.sass::after{
+    animation-name: h;
+}
+@keyframes h{
+    to{
+        width: 70%;
+    }
+}
+.container li.jq::after{
+    animation-name: jq;
+}
+@keyframes jq{
+    to{
+        width: 78%;
+    }
+}
+
+
+/************
+  end SKILLS 
+*************/   
+
+
+.last__section{
+   background-color:#18183a ;
+   display: flex;
+   flex-direction: row;
+   padding: 100px 150px;
+}
+.contact__form{
+   width: 50%;
+   color: white;
+   font-size: 30px;
+   
+}
+.contact__form [type="text"],[type="email"]{
+    padding: 10px ;
+    width: 370px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color:#ffffff ;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact__form label{
+    left: 0;
+    
+}
+textarea{
+    resize: none;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact__form :focus{
+    outline: none;
+    color: white;
+    background-color:transparent;
+    border: #ffffff solid 2px ;
+    
+}
+.contact__form [type="button"]{
+    border:none;
+    color: white;
+    position:absolute;
+    margin-left:110px;
+    font-size: 20px;
+    padding: 10px 45px;
+    border-radius: 10px;
+    background-color:#b8007b ;
+    transition: all 0.3s ease 0s ;
+     margin-top: 20px ; 
+}
+.contact__form [type="button"]:hover{
+    background-color:#e719a2 ;
+}
+.follow{
+   width: 50%;
+   
+   
+}
+.follow img{
+    margin-top: 40px;
+    width: 600px;
+    height: 500px;
+    border-radius:100% 48% 100% 42% / 100% 100% 100% 100%  ;
+}
+
+/********
+ skills 
+*********/
+.footer{
+    display:flex;
+    justify-content: space-around;
+    color: #f5deb3;
+    background-color: black;
+    padding: 30px 0;
+}
+.footer p{
+    font-size: 20px;
+    
+}
+
+.footer .list__b li{
+    display: inline;
+    padding: 10px 15px;
+    
+}
+
+.list__b li:hover{
+    color: white;
+    background-color:#2c2c6b ;
+    border-radius: 15px;
+    transition: all 0.6s ease 0s ;
+}
